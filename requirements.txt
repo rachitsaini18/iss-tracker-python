@@ -1,0 +1,6 @@
+requests
+skyfield
+numpy
+matplotlib
+pandas
+pytz
