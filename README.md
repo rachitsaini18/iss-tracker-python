@@ -32,24 +32,24 @@ Tracking the ISS combines several useful skills in applied astronomy and data sc
 
 This project aims to:
 
-- Fetch live TLE data for the ISS from CelesTrak
-- Calculate ISS pass times (rise, culmination, set) for a given observer location
-- Visualize the ISS ground track on a world map
-- Predict passes over multiple predefined locations simultaneously
-- Analyze long-term orbital drift (inclination, eccentricity, period)
-- Lay the groundwork for a real-time web dashboard for ISS tracking
+- Fetch live TLE data for the ISS from CelesTrak.
+- Calculate ISS pass times (rise, culmination, set) for a given observer location.
+- Visualize the ISS ground track on a world map.
+- Predict passes over multiple predefined locations simultaneously.
+- Analyze long-term orbital drift (inclination, eccentricity, period).
+- Lay the groundwork for a real-time web dashboard for ISS tracking.
 
 ## Methodology
 
 The project is organized into modular components, each building on the previous:
 
-1. **Fetch TLE data** — retrieve the latest ISS orbital elements from CelesTrak using `requests`
-2. **Build a satellite model** — parse the TLE into a Skyfield `EarthSatellite` object
-3. **Predict passes** — use Skyfield's `find_events` to compute rise, culmination, and set times for an observer location, filtered by minimum elevation angle
-4. **Visualize the ground track** — sample the satellite's sub-point position over a time window and plot it on a longitude/latitude grid
-5. **Multi-location predictions** — repeat the pass calculation for a list of cities and tabulate results with `pandas`
-6. **Orbital drift analysis** — compare orbital elements (inclination, eccentricity, period) across historical TLEs to observe the effects of atmospheric drag and reboost maneuvers
-7. **(Conceptual) Real-time dashboard** — outline for exposing this functionality via a Flask API and a Leaflet-based front end
+1. **Fetch TLE data** — retrieve the latest ISS orbital elements from CelesTrak using `requests`.
+2. **Build a satellite model** — parse the TLE into a Skyfield `EarthSatellite` object.
+3. **Predict passes** — use Skyfield's `find_events` to compute rise, culmination, and set times for an observer location, filtered by minimum elevation angle.
+4. **Visualize the ground track** — sample the satellite's sub-point position over a time window and plot it on a longitude/latitude grid.
+5. **Multi-location predictions** — repeat the pass calculation for a list of cities and tabulate results with `pandas`.
+6. **Orbital drift analysis** — compare orbital elements (inclination, eccentricity, period) across historical TLEs to observe the effects of atmospheric drag and reboost maneuvers.
+7. **(Conceptual) Real-time dashboard** — outline for exposing this functionality via a Flask API and a Leaflet-based front end.
 
 ## Project Structure
 
@@ -133,8 +133,7 @@ All modules fetch live TLE data from CelesTrak at runtime, so an internet connec
 ## Author
 
 **Rachit Saini**
-Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology, Patiala
-ISA Summer School 2025 — Astronomy & Astrophysics
+Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology.
 
 ## License
 
